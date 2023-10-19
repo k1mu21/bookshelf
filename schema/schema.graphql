@@ -1,0 +1,25 @@
+type Author {
+  id: ID!
+  name: String!
+  books: [Book]!
+}
+
+type Book {
+  id: ID!
+  title: String!
+  isbn: String!
+  authors: [Author]!
+  category: [Category]!
+  publisher: Publisher!
+  published: String!
+}
+
+type Category {
+  id: ID!
+  name: String!
+}
+
+type Publisher{
+    id: ID!
+    name: String!
+}
